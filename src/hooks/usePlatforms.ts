@@ -14,8 +14,8 @@ const ApiClient = new APICLIENT<Platform>('/platforms/lists/parents')
 const usePlatforms = () => useQuery({
   queryKey: ['platform'],
   queryFn: ApiClient.getAll,
-  staleTime: 24*60*60*1000,
-  
+  staleTime: 24*60*60*1000,//24hrs
+
 })
 
 export default usePlatforms;
